@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<!-- 어떤 div를 가져올지 선택할 수 있음. header를 가져올수도, headerLogin을 가져올 수도 있음. -->
+	<div th:insert="~{fragments/header::headerLogin}"></div>
+	<h1 th:text="${greeting}">Thymeleaf Page</h1>
+	
+	<a th:href='@{~/sample3}'>Sample3로 돌아가기</a>
+	
+</body>
+</html>
